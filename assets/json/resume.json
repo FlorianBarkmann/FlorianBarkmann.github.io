@@ -1,4 +1,5 @@
-{"basics": {},
+{
+  "basics": {},
   "education": [
     {
       "institution": "ETH Zürich",
@@ -28,34 +29,34 @@
       "endDate": "2018-10"
     }
   ],
-    "work": [
-      {
-        "name": "German Cancer Research Center",
-        "position": "Research intern hosted by Niklas Wahl",
-        "url": "",
-        "startDate": "2020-02",
-        "endDate": "2020-07",
-        "location": "Heidelberg, Germany",
-        "summary": "Research internship focused on optimization problems in radiation therapy",
-        "highlights": [
-          "Implemented and tested an optimizer for high dimensional, constrained optimization problems with applications in radiation therapy"
-        ]
-      },
-      {
-        "name": "German Climate Computing Center",
-        "position": "Intern",
-        "url": "",
-        "startDate": "2019-10",
-        "endDate": "2020-02",
-        "location": "Hamburg, Germany",
-        "summary": "Internship focused on climate simulation tools and testing environments",
-        "highlights": [
-          "Developed a local testing environment for the cluster using Docker",
-          "Implemented a tool to automate visualizations of climate simulations with ParaView and Python"
-        ]
-      }
-    ],
-    "review": [
+  "work": [
+    {
+      "name": "German Cancer Research Center",
+      "position": "Research intern hosted by Niklas Wahl",
+      "url": "",
+      "startDate": "2020-02",
+      "endDate": "2020-07",
+      "location": "Heidelberg, Germany",
+      "summary": "Research internship focused on optimization problems in radiation therapy",
+      "highlights": [
+        "Implemented and tested an optimizer for high dimensional, constrained optimization problems with applications in radiation therapy"
+      ]
+    },
+    {
+      "name": "German Climate Computing Center",
+      "position": "Intern",
+      "url": "",
+      "startDate": "2019-10",
+      "endDate": "2020-02",
+      "location": "Hamburg, Germany",
+      "summary": "Internship focused on climate simulation tools and testing environments",
+      "highlights": [
+        "Developed a local testing environment for the cluster using Docker",
+        "Implemented a tool to automate visualizations of climate simulations with ParaView and Python"
+      ]
+    }
+  ],
+  "review": [
     {
       "name": "Bioinformatics",
       "date": "2022",
@@ -72,4 +73,4 @@
       "icon": "fa-solid fa-book"
     }
   ]
-  }
+}
