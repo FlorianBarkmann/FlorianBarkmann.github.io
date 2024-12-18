@@ -73,5 +73,43 @@
       "date": "2024",
       "icon": "fa-solid fa-book"
     }
-  ]
+  ],
+"teaching": [
+  {
+    "name": "Advanced Machine Learning",
+    "institution": "ETH Zürich",
+    "startDate": "2024-10",
+    "endDate": "2025-02"
+  },
+  {
+    "name": "Computational Intelligence Lab",
+    "institution": "ETH Zürich",
+    "startDate": "2024-02",
+    "endDate": "2024-10"
+  },
+  {
+    "name": "Advanced Machine Learning",
+    "institution": "ETH Zürich",
+    "startDate": "2023-10",
+    "endDate": "2024-02"
+  },
+  {
+    "name": "Computational Intelligence Lab",
+    "institution": "ETH Zürich",
+    "startDate": "2023-02",
+    "endDate": "2023-10"
+  },
+  {
+    "name": "Deep Learning",
+    "institution": "ETH Zürich",
+    "startDate": "2022-10",
+    "endDate": "2023-02"
+  },
+  {
+    "name": "Machine Perception",
+    "institution": "ETH Zürich",
+    "startDate": "2022-02",
+    "endDate": "2022-10"
+  }
+]
 }

@@ -16,4 +16,4 @@ nav_order: 2
 
 </div>
 
-"\*" denotes equal contribution. "\*\*" denotes Co-supervision.
+\*: equal contribution, \*\*: Co-supervision
