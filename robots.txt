@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://florianbarkmann.github.io/FlorianBarkmann/sitemap.xml
+Sitemap: https://florianbarkmann.github.io/sitemap.xml
