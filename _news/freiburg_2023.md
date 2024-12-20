@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-CanSig was selected as a contributed talk at the Single cell, systems biology and data analytics approaches conference in Freiburg and Leander Diaz-Bone's Bachelor thesis was accepted as a poster.
+CanSig was selected as a contributed talk at the Single cell, systems biology and data analytics approaches conference in Freiburg and Leander Diaz-Bone's thesis was accepted as a poster.

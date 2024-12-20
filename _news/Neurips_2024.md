@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-CancerFoundation was accepted at the AIDrugX workshop. My first (co-)last author paper with Philip Toma and Olga Ovcharenko on benchmarking SSL methods for single-cell data was also accepted at the SSL workshop.
+CancerFoundation was accepted at the AIDrugX workshop at Neurips. My first (co-)last author paper with Philip Toma and Olga Ovcharenko on benchmarking SSL methods for single-cell data was also accepted at the SSL workshop. 
