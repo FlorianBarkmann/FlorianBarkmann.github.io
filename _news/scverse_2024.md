@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I will attend the first scverse conference in Munich and present scTree as a poster. Marco Baumann's thesis, *SCDIVA: Towards Domain Invariant Reference-Query Mapping*, was also excepted as a poster.
+I will attend the first scverse conference in Munich and present scTree as a poster. Marco Baumann's thesis, _SCDIVA: Towards Domain Invariant Reference-Query Mapping_, was also excepted as a poster.
