@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented at the 7th Annual Loma Linda workshop on Particle Imaging and Radiation Treatment Planning.
+I gave a talk together with Niklas Wahl at the 7th Annual Loma Linda workshop on Particle Imaging and Radiation Treatment Planning.
