@@ -4,6 +4,7 @@
     {
       "institution": "ETH Zürich",
       "area": "PhD Student at Boeva Lab",
+      "location": "Zürich, Switzerland",
       "startDate": "2022-08",
       "endDate": "Present"
     },
@@ -11,6 +12,7 @@
       "institution": "ETH Zürich",
       "area": "Data Science",
       "studyType": "(M.Sc.)",
+      "location": "Zürich, Switzerland",
       "startDate": "2020-10",
       "endDate": "2022-07"
     },
@@ -18,6 +20,7 @@
       "institution": "Eberhard Karls University Tübingen",
       "area": "Mathematics",
       "studyType": "(B.Sc)",
+      "location": "Tübingen, Germany",
       "startDate": "2015-10",
       "endDate": "2019-10"
     },
@@ -57,24 +60,35 @@
       ]
     }
   ],
-  "review": [
+  "reviewer": [
     {
-      "name": "Bioinformatics",
-      "date": "2022",
-      "icon": "fa-solid fa-book"
-    },
-    {
-      "name": "NeurIPS Workshop AIDrugX",
-      "date": "2024",
+      "name": "MLGenX @ICLR",
+      "date": "2025",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "Cancer Discovery",
       "date": "2024",
       "icon": "fa-solid fa-book"
+    },
+    {
+      "name": "AIDrugX @ Neurips",
+      "date": "2024",
+      "icon": "fa-solid fa-book"
+    },
+    {
+      "name": "Bioinformatics",
+      "date": "2022",
+      "icon": "fa-solid fa-book"
     }
   ],
   "teaching": [
+    {
+      "name": "Computational Intelligence Lab, (Head TA)",
+      "institution": "ETH Zürich",
+      "startDate": "2025-02",
+      "endDate": "2025-10"
+    },
     {
       "name": "Advanced Machine Learning",
       "institution": "ETH Zürich",
@@ -82,7 +96,7 @@
       "endDate": "2025-02"
     },
     {
-      "name": "Computational Intelligence Lab",
+      "name": "Computational Intelligence Lab, (Head TA)",
       "institution": "ETH Zürich",
       "startDate": "2024-02",
       "endDate": "2024-10"
