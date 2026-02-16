@@ -1,0 +1,8 @@
+---
+layout: post
+date: 2023-07-01 15:59:00-0400
+inline: true
+related_posts: false
+---
+
+CanSig was selected for a contributed talk at the Single Cell, Systems Biology and Data Analytics conference in Freiburg. Leander Diaz-Bone's thesis was also presented as a poster.
