@@ -62,6 +62,31 @@
   ],
   "reviewer": [
     {
+      "name": "ICLR",
+      "date": "2026",
+      "icon": "fa-solid fa-book"
+    },
+    {
+      "name": "MLGenX @ICLR",
+      "date": "2026",
+      "icon": "fa-solid fa-book"
+    },
+    {
+      "name": "SIMBIOCHEM @EurIPS",
+      "date": "2025",
+      "icon": "fa-solid fa-book"
+    },
+    {
+      "name": "MMRL4H @EurIPS",
+      "date": "2025",
+      "icon": "fa-solid fa-book"
+    },
+    {
+      "name": "GenBio @ICML",
+      "date": "2025",
+      "icon": "fa-solid fa-book"
+    },
+    {
       "name": "MLGenX @ICLR",
       "date": "2025",
       "icon": "fa-solid fa-book"
