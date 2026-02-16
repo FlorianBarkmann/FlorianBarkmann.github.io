@@ -1,22 +1,17 @@
-@article{yates2022cansig,
-  title={CanSig: discovery of shared transcriptional states across cancer patients from single-cell RNA sequencing data},
-  author={Yates*, Josephine and Barkmann*, Florian and Czyz*, Pawel and Kraft, Agnieszka and Glettig, Marc and Lohmann, Frederieke and Saquand, Elia and von der Horst, Richard and Volken, Nicolas and Beerenwinkel, Niko and others},
-  journal={bioRxiv},
-  pages={2022--04},
-  year={2022},
-  publisher={Cold Spring Harbor Laboratory}
-}
-
 @article{prummer2023scroshi,
   title={scROSHI: robust supervised hierarchical identification of single cells},
   author={Prummer, Michael and Bertolini, Anne and Bosshard, Lars and Barkmann, Florian and Yates, Josephine and Boeva, Valentina and Stekhoven, Daniel and Singer, Franziska},
   journal={NAR Genomics and Bioinformatics},
   volume={5},
   number={2},
-  pages={lqad058},
+  number={2},
   year={2023},
-  publisher={Oxford University Press}
+  publisher={Oxford University Press},
+  keywords={press},
+  abstract={Identifying cell types based on expression profiles is a pillar of single cell analysis. Existing machine-learning methods identify predictive features from annotated training data, which are often not available in early-stage studies. This can lead to overfitting and inferior performance when applied to new data. To address these challenges we present scROSHI, which utilizes previously obtained cell type-specific gene lists and does not require training or the existence of annotated data. By respecting the hierarchical nature of cell type relationships and assigning cells consecutively to more specialized identities, excellent prediction performance is achieved. In a benchmark based on publicly available PBMC data sets, scROSHI outperforms competing methods when training data are limited or the diversity between experiments is large.}
 }
+
+
 
 @article{barkmann2023superiorization,
   title={Superiorization of projection algorithms for linearly constrained inverse radiotherapy treatment planning},
@@ -25,41 +20,112 @@
   volume={13},
   pages={1238824},
   year={2023},
-  publisher={Frontiers Media SA}
+  publisher={Frontiers Media SA},
+  keywords={press}
 }
+
+@article{vandenhirtz2024sctree,
+  title={scTree: Discovering Cellular Hierarchies in the Presence of Batch Effects in scRNA-seq Data},
+  author={Vandenhirtz, Moritz and Barkmann, Florian and Manduchi, Laura and Vogt, Julia E and Boeva, Valentina},
+    author+an = {1=jointfirst;2=jointfirst},
+  journal={AccMLBio workshop at ICML (2024) \& SPIGM workshop at ICML (2024)},
+  year={2024},
+  keywords={workshop},
+  note={Spotlight},
+  abstract={We propose a novel method, scTree, for single-cell Tree Variational Autoencoders, extending a hierarchical clustering approach to single-cell RNA sequencing data. scTree corrects for batch effects while simultaneously learning a tree-structured data representation. This VAE-based method allows for a more in-depth understanding of complex cellular landscapes independently of the biasing effects of batches. We show empirically on seven datasets that scTree discovers the underlying clusters of the data and the hierarchical relations between them, as well as outperforms established baseline methods across these datasets. Additionally, we analyze the learned hierarchy to understand its biological relevance, thus underpinning the importance of integrating batch correction directly into the clustering procedure.}
+}
+
+@article{barkmann2025cansig,
+    author = {Barkmann, Florian and Yates, Josephine and Czyż, Paweł and Kraft, Agnieszka and Glettig, Marc and Beerenwinkel, Niko and Boeva, Valentina},
+    title = {{CanSig} Benchmarks Methods for Reproducible Cancer Cell State Discovery from Single-Cell Transcriptomic Data},
+    journal = {Cancer Research},
+    author+an = {1=jointfirst;2=jointfirst},
+    year = {2025},
+    month = {11},
+    issn = {0008-5472},
+    doi = {10.1158/0008-5472.CAN-25-0940},
+    url = {https://doi.org/10.1158/0008-5472.CAN-25-0940},
+    eprint = {https://aacrjournals.org/cancerres/article-pdf/doi/10.1158/0008-5472.CAN-25-0940/3670473/can-25-0940.pdf},
+  keywords={press},
+  abstract={Single-cell RNA-sequencing (scRNA-seq) facilitates the discovery of gene expression signatures that define cell states across patients, which could be used in patient stratification and precision oncology. However, the lack of standardization in computational methodologies that are used to analyze these data impedes the reproducibility of signature detection. To address this, we developed CanSig, a comprehensive benchmarking tool that evaluates methods for identifying transcriptional signatures in cancer. CanSig integrates metrics for batch correction and biological signal conservation with a transcriptional signature correlation metric to score methods according to signature rediscovery, cross-dataset reproducibility, and clinical relevance. CanSig was applied to thirteen methods on twelve scRNA-seq datasets from five human cancer types-glioblastoma, breast cancer, lung adenocarcinoma, rhabdomyosarcoma, and cutaneous squamous cell carcinoma-representing 185 patients and 174,000 malignant cells. The signatures identified with these methods correlated with clinically relevant outcomes, including patient survival and lymph node metastasis. These results identified Harmony, BBKNN, and fastMNN as the highest-scoring integration methods for discovering shared transcriptional states in cancer. Overall, CanSig provides a standardized, reproducible framework for uncovering clinically relevant cancer cell states in single-cell transcriptomics.}
+}
+
 
 @article{ciernik2023ans,
   title={ANS: Adjusted Neighborhood Scoring to improve assessment of gene signatures in single-cell RNA-seq data},
   author={Ciernik, Laure and Kraft, Agnieszka and Barkmann, Florian and Yates, Josephine and Boeva, Valentina},
-  journal={bioRxiv},
-  pages={2023--09},
-  year={2023},
-  publisher={Cold Spring Harbor Laboratory}
-}
-
-@article{vandenhirtz2024sctree,
-  title={sctree: Discovering cellular hierarchies in the presence of batch effects in scrna-seq data},
-  author={Vandenhirtz*, Moritz and Barkmann*, Florian and Manduchi, Laura and Vogt, Julia E and Boeva, Valentina},
-  journal={arXiv preprint arXiv:2406.19300},
-  year={2024},
-  award={},
-  award_name={Spotlight}
+  journal={Accepted in Genome Research},
+  year={2025},
+  keywords={press},
+  abstract={In the field of single-cell RNA sequencing (scRNA-seq), gene signature scoring is integral for pinpointing and characterizing distinct cell populations. However, challenges arise in ensuring the robustness and comparability of scores across various gene signatures and across different batches and conditions. Addressing these challenges, we evaluated the stability of established methods such as Scanpy, UCell, and JASMINE in the context of scoring cells of different types and states. Additionally, we introduced a new scoring method, the Adjusted Neighbourhood Scoring (ANS), that builds on the traditional Scanpy method and improves the handling of the control gene sets. We further exemplified the usability of ANS scoring in differentiating between cancer-associated fibroblasts and malignant cells undergoing epithelial-mesenchymal transition (EMT) in four cancer types and evidenced excellent classification performance (AUCPR train: 0.95-0.99, AUCPR test: 0.91-0.99). In summary, our research introduces the ANS as a robust and deterministic scoring approach that enables the comparison of diverse gene signatures. The results of our study contribute to the development of more accurate and reliable methods for analyzing scRNA-seq data.}
 }
 
 @article{theus2024cancerfoundation,
   title={CancerFoundation: A single-cell RNA sequencing foundation model to decipher drug resistance in cancer},
-  author={Theus*, Alexander and Barkmann*, Florian and Wissel, David and Boeva, Valentina},
-  journal={bioRxiv},
+  author={Theus, Alexander and Barkmann, Florian and Wissel, David and Boeva, Valentina},
+  journal={AIDrugX workshop at NeurIPS (2024)},
   pages={2024--11},
   year={2024},
-  publisher={Cold Spring Harbor Laboratory}
+  publisher={Cold Spring Harbor Laboratory},
+  author+an={1=jointfirst;2=jointfirst},
+  keywords={workshop},
+  abstract={We present CancerFoundation, a novel single-cell RNA-seq foundation model
+(scFM) trained exclusively on malignant cells. Despite being trained on only one
+million total cells, a fraction of the data used by existing models, CancerFoun-
+dation outperforms other scFMs in key tasks such as zero-shot batch integration
+and drug response prediction. During training, we employ tissue and technology-
+aware oversampling and domain-invariant training to enhance performance on un-
+derrepresented cancer types and sequencing technologies. We propose survival
+prediction as a new downstream task to evaluate the generalizability of single-cell
+foundation models to bulk RNA data and their applicability to patient stratifica-
+tion. CancerFoundation demonstrates superior batch integration performance and
+shows significant improvements in predicting drug responses for both unseen cell
+lines and drugs. These results highlight the potential of focused, smaller founda-
+tion models in advancing drug discovery and our understanding of cancer biology.}
 }
 
-@article{toma2024benchmarking,
-  title={Benchmarking Self-Supervised Learning for Single-Cell Data},
-  author={Toma*, Philip and Ovcharenko*, Olga and Daunhawer, Imant and Vogt, Julia and Barkmann**, Florian and Boeva**, Valentina},
-  journal={bioRxiv},
-  pages={2024--11},
-  year={2024},
-  publisher={Cold Spring Harbor Laboratory}
+@article{ovcharenko2025scsslbench,
+    title={scSSL-Bench: Benchmarking Self-Supervised Learning for Single-Cell Data},
+    author={Ovcharenko, Olga and Barkmann, Florian and Toma, Philip and Daunhawer, Imant and Vogt, Julia E and Schelter, Sebastian and Boeva, Valentina},
+    journal={ICML (2025)},
+    year={2025},
+    author+an={1=jointfirst;2=jointfirst;3=jointfirst},
+    keywords={proceedings},
+    note={Spotlight},
+    abstract={Self-supervised learning (SSL) has proven to be a powerful approach for extracting biologically meaningful representations from single-cell data. To advance our understanding of SSL methods applied to single-cell data, we present scSSL-Bench, a comprehensive benchmark that evaluates nineteen SSL methods. Our evaluation spans nine datasets and focuses on three common downstream tasks: batch correction, cell type annotation, and missing modality prediction. Furthermore, we systematically assess various data augmentation strategies. Our analysis reveals task-specific trade-offs: the specialized single-cell frameworks, scVI, CLAIRE, and the finetuned scGPT excel at uni-modal batch correction, while generic SSL methods, such as VICReg and SimCLR, demonstrate superior performance in cell typing and multi-modal data integration. Random masking emerges as the most effective augmentation technique across all tasks, surpassing domain-specific augmentations. Notably, our results indicate the need for a specialized single-cell multi-modal data integration framework. scSSL-Bench provides a standardized evaluation platform and concrete recommendations for applying SSL to single-cell analysis, advancing the convergence of deep learning and single-cell genomics.}
+}
+
+@article{kraft2025cdstate,
+  title={CDState: an unsupervised approach to predict malignant cell heterogeneity in tumor bulk RNA-sequencing data},
+  author={Kraft, Agnieszka and Yates, Josephine and Barkmann, Florian and Boeva, Valentina},
+  journal={Under revision in Cancer Research},
+  pages={2025--03},
+  year={2025},
+  publisher={Cold Spring Harbor Laboratory},
+  keywords={preprint},
+  abstract={Intratumor transcriptional heterogeneity (ITTH), defined by the coexistence of diverse cell states within one tumor, complicates cancer treatment by contributing to variable therapeutic responses. Although single-cell RNA sequencing can resolve this complexity, its cost and technical demands limit its large-scale use. Bulk RNA-seq data provide a scalable alternative, but most deconvolution methods depend on predefined references, restricting their ability to detect novel malignant states. Unsupervised approaches avoid these constraints but are not tailored to capture heterogeneity within the malignant compartment. To address these limitations, we introduce CDState, an unsupervised method for inferring malignant cell subpopulations from bulk RNA-seq data. CDState utilizes non-negative matrix factorization improved with sum-to-one constraint and a cosine similarity-based optimization to deconvolve bulk gene expression into distinct cell state profiles. We demonstrate robustness of CDState on bulkified single-cell RNA-seq datasets from five cancer types, showing that it outperforms existing unsupervised deconvolution methods in the estimation of both cell state proportions and gene expression profiles. Applied to 33 cancer types from The Cancer Genome Atlas, CDState reveals recurrent gene programs, including epithelial-mesenchymal transition, MYC targets, and oxidative phosphorylation, as major contributors to malignant cell ITTH. We further link malignant states to patient clinical features, identifying states associated with poor prognosis. We propose an intratumor heterogeneity index and show its association with patient survival, clinical characteristics, and therapeutic response. Finally, we identify mutations and copy number alterations in genes such as TP53, KRAS, PIK3CA, SOX2, and SATB1 as potential genetic drivers of malignant cell ITTH across cancer types.}
+}
+
+@article{pedrocchi2025sparse,
+  title={Sparse Autoencoders Reveal Interpretable Features in Single-Cell Foundation Models},
+  author={Pedrocchi, Flavia and Barkmann, Florian and Joudaki, Amir and Boeva, Valentina},
+  journal={Under review at ICLR 2026},
+  pages={2025--10},
+  year={2025},
+  publisher={Cold Spring Harbor Laboratory},
+  author+an={1=jointfirst;2=jointfirst},
+  keywords={preprint},
+  abstract={Single-cell foundation models (scFMs) hold promise for applications in cell type annotation and data integration, but their internal mechanisms remain poorly understood. We investigate the structure of these models by training sparse autoencoders (SAEs) on the hidden representations of two widely used scFMs, scGPT and scFoundation. The learned features reveal diverse and complex biological and technical signals, which emerge even in pre-trained models. We also observe that the encoding of this information differs between scFMs with distinct training protocols and architectures. Further, we find that while many features capture the information about cell types across several studies, they often fall short of unifying it into a single generalized representation. Finally, we demonstrate that SAE-derived features are causally related to model behavior and can be intervened upon to reduce unwanted technical effects while steering model outputs to preserve the core biological signal. These findings provide a path toward more interpretable and controllable single-cell foundation models.}
+}
+
+@article{ahlmann2026representation,
+  title={Representation learning of single-cell RNA-seq data},
+  author={Ahlmann-Eltze, Constantin and Barkmann, Florian and Lause, Jan and Boeva, Valentina and Kobak, Dmitry},
+  journal={RNA},
+  pages={rna--080889},
+  year={2026},
+  publisher={Cold Spring Harbor Lab},
+  author+an={1=jointfirst;2=jointfirst;3=jointfirst},
+  keywords={press},
+  abstract={Single-cell RNA sequencing (scRNA-seq) has become a cornerstone experimental technique in cellular biology, with gene expression data for over 100 million sequenced cells available in public repositories. The high dimensionality, sparsity, and technical noise inherent to scRNA-seq data have motivated the development of a broad spectrum of representation learning approaches. These methods learn denoised, low-dimensional representations of single-cell transcriptomes that can then be used for clustering, visualization, trajectory inference, and other downstream analyses. Furthermore, methods have emerged that learn latent representations based on scRNA-seq data pooled across multiple experiments. In this review, we frame factor models, autoencoders, contrastive learning approaches, and transformer-based foundation models as distinct paradigms of representation learning for scRNA-seq. We provide a coherent taxonomy of these methods that articulates their conceptual foundations, shared assumptions, and key distinctions. We also discuss existing benchmarks and identify the major challenges and open questions that will shape the future of the field.}
 }
