@@ -51,6 +51,7 @@
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
+      {% assign jointfirst_raw = entry.author_an | default: entry['author+an'] | default: '' %}
 
       {% assign author_array_limit = author_array_size %}
       {% if site.max_author_limit and author_array_size > site.max_author_limit %}
@@ -59,8 +60,16 @@
 
       {%- for author in entry.author_array limit: author_array_limit -%}
         {% assign author_is_self = false %}
+        {% assign jointfirst_token = forloop.index | append: '=jointfirst' %}
+        {% assign author_is_jointfirst = false %}
+        {% if jointfirst_raw contains jointfirst_token %}
+          {% assign author_is_jointfirst = true %}
+        {% endif %}
         {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
         {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+        {% if author_is_jointfirst %}
+          {% assign author_last_html = author_last_html | append: '<sup>*</sup>' %}
+        {% endif %}
         {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
@@ -107,7 +116,12 @@
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {% assign more_author_last = author.last %}
+          {% assign more_jointfirst_token = forloop.index | plus: author_array_limit | append: '=jointfirst' %}
+          {% if jointfirst_raw contains more_jointfirst_token %}
+            {% assign more_author_last = more_author_last | append: '*' %}
+          {% endif %}
+          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: more_author_last %}
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ', ' %}
           {% endunless %}
