@@ -46,7 +46,7 @@
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
-    {% assign paper_link = nil %}
+    {% assign paper_link = null %}
     {% if entry.url %}
       {% assign paper_link = entry.url %}
     {% elsif entry.doi %}
@@ -59,7 +59,9 @@
       {% assign paper_link = 'https://scholar.google.com/scholar?q=' | append: (entry.title | url_encode) %}
     {% endif %}
     <!-- Title -->
-    <div class="title"><a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a></div>
+    <div class="title">
+      <a href="{{ paper_link }}" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -99,8 +101,25 @@
           {%- endfor -%}
         {%- endif -%}
 
-        {%- if forloop.first == false -%}{%- if forloop.last and author_array_limit == author_array_size -%}, and&nbsp;{%- else -%},&nbsp;{%- endif -%}{%- endif -%}
-        {%- if author_is_self -%}<em>{{ author_first_name }} {{ author_last_html -}}</em>{%- else -%}{%- if coauthor_url -%}<a href="{{ coauthor_url }}">{{ author_first_name }} {{ author_last_html -}}</a>{%- else -%}{{ author_first_name }} {{ author_last_html -}}{%- endif -%}{%- endif -%}
+        {%- if forloop.first == false -%}
+          {%- if forloop.last and author_array_limit == author_array_size -%}, and&nbsp;{%- else -%},&nbsp;{%- endif -%}
+        {%- endif -%}
+        {%- if author_is_self -%}
+          <em>
+            {{- author_first_name }}
+            {{ author_last_html -}}
+          </em>
+        {%- else -%}
+          {%- if coauthor_url -%}
+            <a href="{{ coauthor_url }}">
+              {{- author_first_name }}
+              {{ author_last_html -}}
+            </a>
+          {%- else -%}
+            {{ author_first_name }}
+            {{ author_last_html -}}
+          {%- endif -%}
+        {%- endif -%}
       {%- endfor -%}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 

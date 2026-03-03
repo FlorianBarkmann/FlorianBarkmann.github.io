@@ -1,8 +1,8 @@
 <div class="list-groups">
   {% assign review = data[1] | sort: 'date' | reverse %}
-  {% assign review_categories = "Journal,Conference,Workshop" | split: "," %}
+  {% assign review_categories = 'Journal,Conference,Workshop' | split: ',' %}
   {% for review_category in review_categories %}
-    {% assign review_group = review | where: "category", review_category %}
+    {% assign review_group = review | where: 'category', review_category %}
     {% if review_group.size > 0 %}
       <div class="list-group col-12 mt-2">
         <h6 class="mb-1">{{ review_category }}</h6>
@@ -34,7 +34,7 @@
       {% endfor %}
     {% endif %}
   {% endfor %}
-  {% assign uncategorized_review = review | where_exp: "item", "item.category == nil" %}
+  {% assign uncategorized_review = review | where_exp: 'item', 'item.category == nil' %}
   {% for content in uncategorized_review %}
     <div class="list-group col-md-6">
       <table class="table-cv list-group-table">
