@@ -7,4 +7,4 @@ related_posts: false
 
 <!-- markdownlint-disable-next-line MD041 -->
 
-Our review paper "Representation learning of single-cell RNA-seq data" was published in RNA. This work was co-first authored with Constantin Ahlmann-Eltze and Jan Lause.
+Our review paper "[Representation learning of single-cell RNA-seq data](/publications/#ahlmann2026representation)" with Constantin Ahlmann-Eltze and Jan Lause was published in RNA.

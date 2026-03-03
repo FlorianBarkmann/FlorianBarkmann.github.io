@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We released our preprint "Sparse Autoencoders Reveal Interpretable Features in Single-Cell Foundation Models" with Flavia Pedrocchi. We trained sparse autoencoders on hidden representations of three single-cell foundation models to study their internal features.
+We released our preprint "[Sparse Autoencoders Reveal Interpretable Features in Single-Cell Foundation Models](/publications/#pedrocchi2025sparse)" with Flavia Pedrocchi. We trained sparse autoencoders on hidden representations of three single-cell foundation models to study their internal features.

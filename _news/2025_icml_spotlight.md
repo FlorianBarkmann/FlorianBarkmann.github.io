@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper _scSSL-Bench: Benchmarking Self-Supervised Learning for Single-Cell Data_ was accepted at ICML 2025 as a spotlight.
+Our paper [_scSSL-Bench: Benchmarking Self-Supervised Learning for Single-Cell Data_](/publications/#ovcharenko2025scsslbench) was accepted at ICML 2025 as a spotlight.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper "CanSig Benchmarks Methods for Reproducible Cancer Cell State Discovery from Single-Cell Transcriptomic Data" was accepted in Cancer Research. This work was co-first authored with Josephine Yates.
+Our paper "[CanSig Benchmarks Methods for Reproducible Cancer Cell State Discovery from Single-Cell Transcriptomic Data](/publications/#barkmann2025cansig)" was accepted in Cancer Research. This work was co-first authored with Josephine Yates.

@@ -35,6 +35,15 @@
   ],
   "work": [
     {
+      "name": "Cradle",
+      "position": "Machine learning research intern",
+      "url": "",
+      "startDate": "2025-09",
+      "endDate": "2026-01",
+      "location": "Zürich, Switzerland",
+      "summary": "Machine learning research internship"
+    },
+    {
       "name": "German Cancer Research Center",
       "position": "Research intern hosted by Niklas Wahl",
       "url": "",
@@ -64,46 +73,61 @@
     {
       "name": "Gen^2 @ICML",
       "date": "2026",
+      "category": "Workshop",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "ICLR",
       "date": "2026",
+      "category": "Conference",
+      "icon": "fa-solid fa-book"
+    },
+    {
+      "name": "ICML",
+      "date": "2026",
+      "category": "Conference",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "MLGenX @ICLR",
       "date": "2025, 2026",
+      "category": "Workshop",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "SIMBIOCHEM @EurIPS",
       "date": "2025",
+      "category": "Workshop",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "MMRL4H @EurIPS",
       "date": "2025",
+      "category": "Workshop",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "GenBio @ICML",
       "date": "2025",
+      "category": "Workshop",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "Cancer Discovery",
       "date": "2024",
+      "category": "Journal",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "AIDrugX @ Neurips",
       "date": "2024",
+      "category": "Workshop",
       "icon": "fa-solid fa-book"
     },
     {
       "name": "Bioinformatics",
       "date": "2022",
+      "category": "Journal",
       "icon": "fa-solid fa-book"
     }
   ],

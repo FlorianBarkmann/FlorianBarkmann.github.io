@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-CancerFoundation was accepted at the AIDrugX workshop at NeurIPS. Our scSSL-Bench work with Philip Toma and Olga Ovcharenko was also accepted at the NeurIPS Self-Supervised Learning workshop.
+[CancerFoundation](/publications/#theus2024cancerfoundation) was accepted at the AIDrugX workshop at NeurIPS. Our [scSSL-Bench](/publications/#ovcharenko2025scsslbench) work with Philip Toma and Olga Ovcharenko was also accepted at the NeurIPS Self-Supervised Learning workshop.

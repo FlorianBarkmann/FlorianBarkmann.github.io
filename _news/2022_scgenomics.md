@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-CanSig received the Best Poster Award and was selected for a contributed talk at the Single Cell Genomics meets Data Science conference in Munich.
+[CanSig](/publications/#barkmann2025cansig) received the Best Poster Award and was selected for a contributed talk at the Single Cell Genomics meets Data Science conference in Munich.

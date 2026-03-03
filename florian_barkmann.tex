@@ -1,0 +1,131 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+%\usepackage{settings}
+\RequirePackage[backend=biber, style=year, sorting=none,giveninits=true,
+maxbibnames=50, eprint=false,
+backref=true, backrefstyle=three]{biblatex}
+\usepackage{xstring}
+\RequirePackage{fontawesome}
+
+% Second parameter can be anything, as the headings are added separately
+\renewcommand*{\mkbibcompletename}[1]{
+  \ifitemannotation{jointfirst}
+    {\IfSubStr{#1}{Barkmann}{\textbf{#1*}}{#1*}}
+    {\IfSubStr{#1}{Barkmann}{\textbf{#1}}{#1}}                
+}
+
+% Define custom bibliography driver for articles
+\DeclareBibliographyDriver{article}{%
+  \usebibmacro{bibindex}%
+  % Create table-like format with year on left, content on right
+  \begin{tabular}[t]{@{}p{0.8cm}@{\hspace{0.5cm}}p{0.85\textwidth}@{}}
+    \printfield{year} & 
+    \begin{minipage}[t]{\linewidth}
+      \textbf{\printfield[titlecase]{title}}\\
+      \printnames{author}\\
+      \iffieldundef{note}{}{\textbf{\printfield{note}} at }\textit{\usebibmacro{journal}}
+    \end{minipage}
+  \end{tabular}%
+  \vspace{0.1cm}
+}
+
+% Custom formatting for journal titles
+\DeclareFieldFormat[article]{journaltitle}{#1}
+\DeclareFieldFormat[article]{title}{#1}
+
+% Remove quotes from titles
+\DeclareFieldFormat[article]{title}{#1}
+
+\addbibresource{mybib.bib}
+
+\name{Florian Barkmann} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{\href{flobarkmann@gmail.com}{{{\small\faEnvelopeO}~}flobarkmann@gmail.com} \\ \href{https://florianbarkmann.github.io}{{{\small\faGithub}~}florianbarkmann.github.io}}  %
+
+\begin{document}
+  
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf PhD Student at Boeva Lab}, ETH Zürich \hfill {Aug. 2022 -- \textcolor{white}{July 2022}}\\
+{\bf Data Science (M.Sc.)}, ETH Zürich \hfill {Oct. 2020 -- July 2022}\\
+%GPA: 5.68 (from 6, best, to 1, worst)\\
+{\bf Mathematics (B.Sc.)}, Eberhard Karls University Tübingen \hfill {Oct. 2015 -- Oct. 2019}\\
+{\bf International Economics (B.Sc.)}, Eberhard Karls University Tübingen \hfill {Oct. 2014 -- Oct. 2018}\\
+%GPA: 1.22 (from 1, best, to 5, worst)
+\end{rSection}
+\begin{rSection}{EXPERIENCE}
+\textbf{Cradle} \hfill Sep. 2025 -- Jan. 2025\\
+Machine learning research intern \hfill \textit{Zürich, Switzerland}\\
+\textbf{German Cancer Research Center} \hfill Feb. 2020 -- July 2020\\
+Research intern hosted by Niklas Wahl \hfill \textit{Heidelberg, Germany}\\
+\textbf{German Climate Computing Center} \hfill Oct. 2019 -- Feb. 2020\\
+Intern \hfill \textit{Hamburg, Germany}
+
+
+\end{rSection}
+\begin{rSection}{PUBLICATIONS}
+\end{rSection}
+\vspace{-0.75cm}
+\subsection*{Journal articles}
+\printbibliography[keyword={press},heading={none}]
+\vspace{-0.35cm}
+\subsection*{Proceedings}
+\printbibliography[keyword={proceedings},heading={none}]
+\vspace{-0.35cm}
+\subsection*{Peer-reviewed workshop papers}
+\printbibliography[keyword={workshop},heading={none}]
+\vspace{-0.35cm}
+\subsection*{Preprints}
+\printbibliography[keyword={preprint},heading={none}]
+* denotes shared first authorship.
+
+
+\begin{rSection}{CONFERENCE CONTRIBUTIONS}
+ 
+\begin{enumerate}
+\item[2024] AccMLBio workshop at ICML, Vienna, \textbf{Spotlight talk}
+\item[2023] Single cell, systems biology and data analytics approaches to understand cellular mechanisms in development and disease, Freiburg, \textbf{Contributed talk}
+\item[2023] Basel Computational Biology Conference (BC2), Basel, \textbf{Contributed talk}
+\item[2022] Single Cell Genomics meets Data Science, Munich, \textbf{Contributed talk}, \textbf{best poster award}
+\item[2021] 7th Annual Loma Linda workshop on Particle Imaging and Radiation Treatment Planning, Loma Linda, \textbf{Contributed talk}
+\end{enumerate}
+\end{rSection}
+
+\begin{rSection}{TEACHING RESPONSIBILITIES}
+\vspace{-1.25em}
+\item Computational Intelligence Lab \textbf{(Head TA)}, ETH Zürich \hfill {Feb. 2025 -- Oct. 2025}
+\item Advanced Machine Learning, ETH Zürich\hfill {Oct. 2024 -- Feb. 2025}
+\item Computational Intelligence Lab \textbf{(Head TA)}, ETH Zürich \hfill {Feb. 2024 -- Oct. 2024}
+\item Advanced Machine Learning, ETH Zürich\hfill {Oct. 2023 -- Feb. 2024}
+\item Computational Intelligence Lab, ETH Zürich \hfill {Feb. 2023 -- Oct. 2023}
+\item Deep Learning, ETH Zürich\hfill {Oct. 2022 -- Feb. 2023}
+\item Machine Perception, ETH Zürich \hfill {Feb. 2022 -- Oct. 2022}
+\end{rSection}
+\begin{rSection}{SUPERVISION}
+\begin{enumerate}
+    \item[2025] Flavia Pedrocchi, Master Thesis, \textit{Interpretable Features in Single-Cell Foundation Models via Sparse Autoencoders} (current)
+    \item[2025] Katya Tubis, Research intern, \textit{Delta Tuning Methods for parameter efficient fine-tuning of Single-Cell Foundation Models} (current)
+    \item[2024] Alexander Theus, Master Thesis, \textit{scCancerGPT: Understanding intratumor heterogeneity through scRNA-seq foundation models}, \textbf{Paper accepted} at NeurIPS 2024 Workshop: AIDrugX 2024
+    \item[2024] Marco Baumann, Bachelor Thesis, \textit{scDIVA: Towards domain invariant reference-query mapping}, \textbf{Poster presentation} at scverse conference 2024
+    \item[2024] Fiona Muntwyler joint supervision with Imant Daunhawer, Master Thesis, \textit{Multi-modality integration using VAEs}
+    \item[2024] Olga Ovcharenko joint supervision with Imant Daunhawer, Master Thesis, \textit{Self-Supervised contrastive Learning for spatial transcriptomics data}, \textbf{Paper accepted} to NeurIPS 2024 Workshop: Self-Supervised Learning 2024
+    \item[2023] Philip Toma, Master Thesis, \textit{Regularized Self-Supervised Learning from Nearest Neighbors to Integrate scRNA-seq Experiments},
+    \textbf{Paper accepted} to NeurIPS 2024 Workshop: Self-Supervised Learning 2024
+    \item[2023] Leander Diaz-Bone, Bachelor Thesis, \textit{VAEs with Learnable Priors for Learning a Robust Latent Space Representation of Single-Cell RNA Sequencing Data}, \textbf{Poster presentation} at Single cell, systems biology and data analytics conference in Freiburg 2023
+\end{enumerate}
+\end{rSection}
+
+\begin{rSection}{OTHER ACTIVITIES}
+\vspace{-1.25em}
+\item Reviewer for \textit{ICLR} (2026), \textit{SIMBIOCHEM@EurIPS} (2025),\textit{MMRL4H@EurIPS} (2025), \textit{GenBio@ICML} (2025), \textit{MLGenX@ICLR} (2025, 2026), \textit{Cancer Discovery} (2024), \textit{AIDrugX@NeurIPS} (2024), \textit{Bioinformatics}(2022)
+\item Co-organizer of quarterly meetings for all bioinformatics groups from ETH Zürich\hfill {Oct. 2022 -- Oct. 2023}\\ and the University of Zürich
+\item Semester abroad at the University of Hong Kong\hfill {Oct. 2016 -- Dec. 2016}
+\item Volunteering at a school in San José, Costa Rica\hfill {Aug. 2013 -- Aug. 2014}
+\end{rSection} 
+
+\nocite{ahlmann2026representation,barkmann2025cansig,ciernik2023ans,prummer2023scroshi,barkmann2023superiorization,ovcharenko2025scsslbench,theus2024cancerfoundation,vandenhirtz2024sctree,pedrocchi2025sparse,kraft2025cdstate}
+\end{document}
+ 

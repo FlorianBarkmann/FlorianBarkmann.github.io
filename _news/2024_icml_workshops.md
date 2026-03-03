@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-scTree received a spotlight talk at the AccMLBio workshop and was accepted at the SPIGM workshop at ICML in Vienna.
+[scTree](/publications/#vandenhirtz2024sctree) received a spotlight talk at the AccMLBio workshop and was accepted at the SPIGM workshop at ICML in Vienna.

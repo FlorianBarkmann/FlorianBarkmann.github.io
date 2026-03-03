@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-CanSig was selected for a contributed talk at the Single Cell, Systems Biology and Data Analytics conference in Freiburg. Leander Diaz-Bone's thesis was also presented as a poster.
+[CanSig](/publications/#barkmann2025cansig) was selected for a contributed talk at the Single Cell, Systems Biology and Data Analytics conference in Freiburg. Leander Diaz-Bone's thesis was also presented as a poster.
